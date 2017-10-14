@@ -1,0 +1,27 @@
+{% extends 'layout.twig' %}
+{% block content %}
+	<section class="hero hero-body is-dark contanier">
+		<h1 class="title">Postnummer</h1>
+		<h2 class="subtitle">Skriv in postnummer för att få information</h2>
+		<form id="zipForm">
+			<div class="field">
+			  <div class="control has-icons-left has-icons-right">
+			    <input class="input zip is-large" type="text" placeholder="Skriv in postnummer">
+			    <span class="icon is-small is-left">
+			      <i class="fa fa-map-pin"></i>
+			    </span>
+			    <span class="icon is-small is-right icon-check">
+			      <i class="fa fa-check"></i>
+			    </span>
+			    <span class="icon is-small is-right icon-remove">
+			      <i class="fa fa-remove"></i>
+			    </span>
+			  </div>
+			</div>
+		</form>
+	</section>
+	<br>
+	<div class="contanier">
+		<div id="output"></div>
+	</div>
+{% endblock %}
