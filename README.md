@@ -1,4 +1,4 @@
-##Swedish Zipcode information using the fetch API
+## Swedish Zipcode information using the fetch API
 
 ## Install
 
