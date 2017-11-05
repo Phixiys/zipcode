@@ -1,12 +1,12 @@
 // Listen for submit
-document.querySelector("#zipForm").addEventListener("submit", getLocationInfo);
+document.querySelector("#zipForm").addEventListener('submit', getLocationInfo);
 
 // Listen for delete
 document.querySelector('body').addEventListener('click', deleteLocation);
 
 function getLocationInfo(e) {
   // Get zip value from input
-  const zip = document.querySelector(".zip").value;
+  const zip = document.querySelector('.zip').value;
 
   // Make request
   fetch(`http://api.zippopotam.us/se/${zip}`)
@@ -56,7 +56,6 @@ function showIcon(icon) {
 	// Clear icons
 	document.querySelector('.icon-remove').style.display = 'none';
 	document.querySelector('.icon-check').style.display = 'none';
-
 	document.querySelector(`.icon-${icon}`).style.display = 'inline-flex';
 }
 
